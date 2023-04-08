@@ -92,14 +92,6 @@ h2 {
     margin-top: 40px
 }
 
-@keyframes shake {
-    0% {margin-left: 0;}
-    25% {margin-left: 7px; margin-top: 7px;}
-    50% {margin-left: 0;}
-    75% {margin-left: -7px; margin-bottom: -7px}
-    100% {margin-left: 0;}
-}
-
 .pharse {
     position: absolute;
     animation: openCookie 5s;
@@ -118,11 +110,6 @@ h2 {
     color: #000000;
     line-height: 29px;
     text-align: center;
-}
-
-@keyframes openCookie {
-    0% {transform: translateY(40px);}
-    100% {transform: translateY(-60px);}
 }
 
 .btn2 {
@@ -148,3 +135,22 @@ h2 {
     background: #FFA500;
 }
 
+@keyframes openCookie {
+    0% {
+        transform: translateY(40px)
+        scale(0.1);
+    }
+
+    100% {
+        transform: translateY(-60px)
+        scale(1);
+    }
+}
+
+@keyframes shake {
+    0% {margin-left: 0;}
+    25% {margin-left: 7px; margin-top: 7px;}
+    50% {margin-left: 0;}
+    75% {margin-left: -7px; margin-bottom: -7px}
+    100% {margin-left: 0;}
+}
